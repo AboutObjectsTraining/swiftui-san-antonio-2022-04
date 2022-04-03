@@ -18,9 +18,9 @@ https://github.com/AboutObjectsTraining/Swift-4-Highlights
 
 ### Part 2: SwiftUI Development (3 Days)
 
-[https://github.com/AboutObjectsTraining/swiftui-coolness](https://github.com/AboutObjectsTraining/swiftui-coolness)
+https://github.com/AboutObjectsTraining/swiftui-coolness
 
-[https://github.com/AboutObjectsTraining/swiftui-readinglist](https://github.com/AboutObjectsTraining/swiftui-readinglist)
+https://github.com/AboutObjectsTraining/swiftui-readinglist
 
 https://github.com/AboutObjectsTraining/swiftui-book-spy
 
