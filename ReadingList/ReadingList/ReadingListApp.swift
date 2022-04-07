@@ -5,9 +5,12 @@ import SwiftUI
 
 @main
 struct ReadingListApp: App {
+    @StateObject var viewModel = ReadingListViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ReadingListView()
+                .environmentObject(viewModel)
         }
     }
 }

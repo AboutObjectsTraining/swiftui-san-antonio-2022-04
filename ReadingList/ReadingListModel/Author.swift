@@ -1,12 +1,18 @@
 // Copyright (C) 2022 About Objects, Inc. All Rights Reserved.
 // See LICENSE.txt for this project's licensing information.
 
-struct Author: Identifiable {
-    var id = UUID()
-    var firstName: String
-    var lastName: String
+public struct Author: Identifiable {
+    public var id = UUID()
+    public var firstName: String
+    public var lastName: String
     
-    // TODO: Add custom intializer if needed.
+    public var fullName: String {
+        switch (firstName, lastName) {
+            case ("", ""): return "Unknown"
+            case (let name, ""), ("", let name): return name
+            default: return "\(firstName) \(lastName)"
+        }
+    }
 }
 
 extension Author: Codable {

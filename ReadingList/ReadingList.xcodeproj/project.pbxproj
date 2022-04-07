@@ -21,6 +21,8 @@
 		B464045227FF68310088BA74 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464045127FF68310088BA74 /* Author.swift */; };
 		B464045427FF6C660088BA74 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464045327FF6C660088BA74 /* Book.swift */; };
 		B464045627FF71EC0088BA74 /* ReadingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464045527FF71EC0088BA74 /* ReadingList.swift */; };
+		B464045827FF72A30088BA74 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464045727FF72A30088BA74 /* DataStore.swift */; };
+		B464045A27FF77D40088BA74 /* ReadingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464045927FF77D40088BA74 /* ReadingListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		B464045127FF68310088BA74 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		B464045327FF6C660088BA74 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		B464045527FF71EC0088BA74 /* ReadingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingList.swift; sourceTree = "<group>"; };
+		B464045727FF72A30088BA74 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		B464045927FF77D40088BA74 /* ReadingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 				B464044F27FF66880088BA74 /* ReadingList.json */,
 				B464040027FF5F960088BA74 /* ReadingListApp.swift */,
 				B464040227FF5F960088BA74 /* ReadingListView.swift */,
+				B464045927FF77D40088BA74 /* ReadingListViewModel.swift */,
 				B464040427FF5F980088BA74 /* Assets.xcassets */,
 				B464040627FF5F980088BA74 /* Preview Content */,
 			);
@@ -152,6 +157,7 @@
 				B464045127FF68310088BA74 /* Author.swift */,
 				B464045327FF6C660088BA74 /* Book.swift */,
 				B464045527FF71EC0088BA74 /* ReadingList.swift */,
+				B464045727FF72A30088BA74 /* DataStore.swift */,
 			);
 			path = ReadingListModel;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B464040327FF5F960088BA74 /* ReadingListView.swift in Sources */,
+				B464045A27FF77D40088BA74 /* ReadingListViewModel.swift in Sources */,
 				B464040127FF5F960088BA74 /* ReadingListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B464045427FF6C660088BA74 /* Book.swift in Sources */,
+				B464045827FF72A30088BA74 /* DataStore.swift in Sources */,
 				B464045227FF68310088BA74 /* Author.swift in Sources */,
 				B464045627FF71EC0088BA74 /* ReadingList.swift in Sources */,
 			);
