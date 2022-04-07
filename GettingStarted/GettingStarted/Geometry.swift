@@ -14,7 +14,7 @@ struct Geometry: View {
                     .position(x: width, y: height)
             }
         }
-        .frame(width: 180, height: 80, alignment: .center)
+        .frame(width: 240, height: 180, alignment: .center)
         .background(.yellow)
     }
 }

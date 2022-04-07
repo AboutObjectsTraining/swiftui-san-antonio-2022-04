@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B46403F327FF4F380088BA74 /* KeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46403F227FF4F380088BA74 /* KeyPaths.swift */; };
 		B473DEFD253B3F4E00BC1E18 /* GettingStartedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473DEFC253B3F4E00BC1E18 /* GettingStartedApp.swift */; };
 		B473DEFF253B3F4E00BC1E18 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473DEFE253B3F4E00BC1E18 /* MyView.swift */; };
 		B473DF01253B3F5000BC1E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B473DF00253B3F5000BC1E18 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B46403F227FF4F380088BA74 /* KeyPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPaths.swift; sourceTree = "<group>"; };
 		B473DEF9253B3F4E00BC1E18 /* GettingStarted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GettingStarted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B473DEFC253B3F4E00BC1E18 /* GettingStartedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingStartedApp.swift; sourceTree = "<group>"; };
 		B473DEFE253B3F4E00BC1E18 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
@@ -150,8 +152,8 @@
 				B4C92F0F27F791AC007F0116 /* Geometry.swift */,
 				B49AB31227F3BBE600BE2701 /* CustomViewBuilder.swift */,
 				B49AB31C27F5182C00BE2701 /* State.swift */,
-				B4C92EF927F611A3007F0116 /* Bindings.swift */,
 				B4C92EFB27F63359007F0116 /* Gestures.swift */,
+				B4C92EF927F611A3007F0116 /* Bindings.swift */,
 				B49AB31627F4BBEC00BE2701 /* Animation.swift */,
 				B4C92F0B27F77EE6007F0116 /* PersonViewModel.swift */,
 				B4C92F0D27F782B7007F0116 /* PersonViewModel_2.swift */,
@@ -173,6 +175,7 @@
 				B4C92F2327F8CBEA007F0116 /* Navigation_2.swift */,
 				B4F3EEBA253B7E250044DED2 /* NumberedGrid.swift */,
 				B49AB30E27F364AA00BE2701 /* NumberedList.swift */,
+				B46403F227FF4F380088BA74 /* KeyPaths.swift */,
 				B4C92F0527F77779007F0116 /* OpenURLView.swift */,
 				B49AB31027F366CD00BE2701 /* DynamicGrid.swift */,
 				B473DF00253B3F5000BC1E18 /* Assets.xcassets */,
@@ -307,6 +310,7 @@
 				B4C92F2027F8B8A1007F0116 /* Sheets_2.swift in Sources */,
 				B4F3EEBB253B7E250044DED2 /* NumberedGrid.swift in Sources */,
 				B4C92F1E27F7D069007F0116 /* PersonViewModel_3.swift in Sources */,
+				B46403F327FF4F380088BA74 /* KeyPaths.swift in Sources */,
 				B4C92EFE27F6479E007F0116 /* StateObject.swift in Sources */,
 				B4C92F0027F66864007F0116 /* StateObject-2.swift in Sources */,
 				B49AB30F27F364AA00BE2701 /* NumberedList.swift in Sources */,

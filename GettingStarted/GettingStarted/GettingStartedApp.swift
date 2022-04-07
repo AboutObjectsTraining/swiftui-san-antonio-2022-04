@@ -7,8 +7,7 @@ import SwiftUI
 struct GettingStartedApp: App {
     var body: some Scene {
         WindowGroup {
-//            GettingStartedView()
-            Navigation_2()
+            GettingStartedView()
         }
     }
 }

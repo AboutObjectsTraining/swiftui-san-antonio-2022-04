@@ -33,7 +33,7 @@ struct TextFieldBasicsView: View {
     
     var body: some View {
         Form {
-            TextField("Message", text: $message)
+            TextField("Type something here", text: $message)
             Text("Message is: \(message)")
         }
     }
@@ -62,5 +62,6 @@ struct TextEditingView: View {
 struct EditingText_Previews: PreviewProvider {
     static var previews: some View {
         EditingTextView()
+        TextFieldBasicsView()
     }
 }
