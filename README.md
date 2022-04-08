@@ -24,6 +24,29 @@ https://github.com/AboutObjectsTraining/swiftui-readinglist
 
 https://github.com/AboutObjectsTraining/swiftui-book-spy
 
+## Additional Resources
+
+Developer.app on macOS (ships with Xcode)
+
+WWDC videos
+
+[CS193p — Developing Applications for iOS Using SwiftUI](https://cs193p.sites.stanford.edu)
+
+Paul Hegarty, Stanford University (former VP of Engineering at NeXT)
+
+[Swift on Tap](https://swiftontap.com)
+
+Documentation and examples
+
+[Hacking with Swift](https://www.hackingwithswift.com)
+
+Tutorials and concise examples
+
+[SwiftUI Lab](https://swiftui-lab.com)
+
+Documentation and examples
+
+
 
 ## Author
 Jonathan Lehr, jonathan@aboutobjects.com
