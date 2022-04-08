@@ -15,9 +15,22 @@ struct ReadingListView: View {
     }
     
     private var listOfBooks: some View {
-        List {
-            ForEach(viewModel.readingList.books) { book in
-                BookCell(book: book)
+        NavigationView {
+            List {
+                ForEach(viewModel.readingList.books) { book in
+                    BookCell(book: book)
+                }
+                .onDelete { indexSet in
+                    viewModel.delete(at: indexSet)
+                }
+                .onMove { from, to in
+                    viewModel.move(from: from, to: to)
+                }
+            }
+            .navigationTitle(viewModel.readingList.title)
+            .listStyle(.grouped)
+            .toolbar {
+                EditButton()
             }
         }
     }
@@ -40,19 +53,33 @@ struct BookCell: View {
     let book: Book
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text("\(book.title)")
-            HStack {
-                Text("\(book.year)")
-                Text("\(book.author.fullName)")
+        HStack {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("\(book.title)")
+                HStack {
+                    Text("\(book.year)")
+                    Text("\(book.author.fullName)")
+                }
+            }
+            .layoutPriority(1)
+            NavigationLink("") {
+                Form {
+                    Text("\(book.title)")
+                    Text("\(book.year)")
+                    Text("\(book.author.fullName)")
+                }
+                .navigationTitle("Book Detail")
             }
         }
     }
 }
 
 struct ReadingListView_Previews: PreviewProvider {
+    static let viewModel = ReadingListViewModel()
     static var previews: some View {
         ReadingListView()
-            .environmentObject(ReadingListViewModel())
+            .environmentObject(viewModel)
+//        BookCell(book: viewModel.readingList.books[0])
+//            .scaledToFit()
     }
 }

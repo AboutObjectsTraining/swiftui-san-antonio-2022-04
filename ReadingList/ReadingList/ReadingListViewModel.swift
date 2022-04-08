@@ -27,4 +27,13 @@ extension ReadingListViewModel {
             print("Unable to fetch reading list from store \(store)")
         }
     }
+    
+    func delete(at indexSet: IndexSet) {
+        guard let index = indexSet.first else { return }
+        readingList.books.remove(at: index)
+    }
+    
+    func move(from indexSet: IndexSet, to index: Int) {
+        readingList.books.move(fromOffsets: indexSet, toOffset: index)
+    }
 }
