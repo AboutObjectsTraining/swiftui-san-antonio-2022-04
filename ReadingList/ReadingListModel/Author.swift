@@ -13,6 +13,11 @@ public struct Author: Identifiable {
             default: return "\(firstName) \(lastName)"
         }
     }
+    
+    public init(firstName: String = "", lastName: String = "") {
+        self.firstName = firstName
+        self.lastName = lastName
+    }
 }
 
 extension Author: Codable {

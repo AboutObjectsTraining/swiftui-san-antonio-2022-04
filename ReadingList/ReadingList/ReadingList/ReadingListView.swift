@@ -30,9 +30,18 @@ struct ReadingListView: View {
             .navigationTitle(viewModel.readingList.title)
             .listStyle(.grouped)
             .toolbar {
-                EditButton()
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: addBook, label: { Image(systemName: "plus.circle") })
+                }
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button(action: editTitle,
+                           label: { Image(systemName: "square.and.pencil") })
+                    EditButton()
+                }
             }
         }
+        .sheet(isPresented: $viewModel.isEditingTitle, content: { EditTitleView() })
+        .sheet(isPresented: $viewModel.isAddingBook, content: { AddBookView() })
     }
     
     var body: some View {
@@ -49,37 +58,24 @@ struct ReadingListView: View {
     }
 }
 
-struct BookCell: View {
-    let book: Book
+// MARK: - Actions
+extension ReadingListView {
     
-    var body: some View {
-        HStack {
-            VStack(alignment: .leading, spacing: 4) {
-                Text("\(book.title)")
-                HStack {
-                    Text("\(book.year)")
-                    Text("\(book.author.fullName)")
-                }
-            }
-            .layoutPriority(1)
-            NavigationLink("") {
-                Form {
-                    Text("\(book.title)")
-                    Text("\(book.year)")
-                    Text("\(book.author.fullName)")
-                }
-                .navigationTitle("Book Detail")
-            }
-        }
+    func editTitle() {
+        viewModel.toggleEditingTitle()
+    }
+    
+    func addBook() {
+        viewModel.toggleAddingBook()
     }
 }
 
 struct ReadingListView_Previews: PreviewProvider {
+    
     static let viewModel = ReadingListViewModel()
+    
     static var previews: some View {
         ReadingListView()
             .environmentObject(viewModel)
-//        BookCell(book: viewModel.readingList.books[0])
-//            .scaledToFit()
     }
 }

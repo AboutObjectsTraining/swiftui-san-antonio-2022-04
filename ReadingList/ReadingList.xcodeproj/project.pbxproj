@@ -23,6 +23,11 @@
 		B464045627FF71EC0088BA74 /* ReadingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464045527FF71EC0088BA74 /* ReadingList.swift */; };
 		B464045827FF72A30088BA74 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464045727FF72A30088BA74 /* DataStore.swift */; };
 		B464045A27FF77D40088BA74 /* ReadingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464045927FF77D40088BA74 /* ReadingListViewModel.swift */; };
+		B464045C280099BC0088BA74 /* EditTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464045B280099BC0088BA74 /* EditTitleView.swift */; };
+		B464045E28009A040088BA74 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464045D28009A040088BA74 /* BookCell.swift */; };
+		B46404602800BC460088BA74 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464045F2800BC460088BA74 /* AddBookView.swift */; };
+		B46404622800BD0A0088BA74 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46404612800BD0A0088BA74 /* TextFieldCell.swift */; };
+		B46404662800D3F70088BA74 /* EditBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46404652800D3F70088BA74 /* EditBookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +85,11 @@
 		B464045527FF71EC0088BA74 /* ReadingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingList.swift; sourceTree = "<group>"; };
 		B464045727FF72A30088BA74 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		B464045927FF77D40088BA74 /* ReadingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListViewModel.swift; sourceTree = "<group>"; };
+		B464045B280099BC0088BA74 /* EditTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTitleView.swift; sourceTree = "<group>"; };
+		B464045D28009A040088BA74 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		B464045F2800BC460088BA74 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		B46404612800BD0A0088BA74 /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		B46404652800D3F70088BA74 /* EditBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +144,11 @@
 			children = (
 				B464044F27FF66880088BA74 /* ReadingList.json */,
 				B464040027FF5F960088BA74 /* ReadingListApp.swift */,
-				B464040227FF5F960088BA74 /* ReadingListView.swift */,
-				B464045927FF77D40088BA74 /* ReadingListViewModel.swift */,
+				B46404632800BD780088BA74 /* ReadingList */,
+				B46404642800BDB80088BA74 /* Cells */,
+				B464045F2800BC460088BA74 /* AddBookView.swift */,
+				B464045B280099BC0088BA74 /* EditTitleView.swift */,
+				B46404652800D3F70088BA74 /* EditBookView.swift */,
 				B464040427FF5F980088BA74 /* Assets.xcassets */,
 				B464040627FF5F980088BA74 /* Preview Content */,
 			);
@@ -169,6 +182,24 @@
 				B464043D27FF63170088BA74 /* ModelTests.swift */,
 			);
 			path = ReadingListModelTests;
+			sourceTree = "<group>";
+		};
+		B46404632800BD780088BA74 /* ReadingList */ = {
+			isa = PBXGroup;
+			children = (
+				B464040227FF5F960088BA74 /* ReadingListView.swift */,
+				B464045927FF77D40088BA74 /* ReadingListViewModel.swift */,
+			);
+			path = ReadingList;
+			sourceTree = "<group>";
+		};
+		B46404642800BDB80088BA74 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B46404612800BD0A0088BA74 /* TextFieldCell.swift */,
+				B464045D28009A040088BA74 /* BookCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,8 +348,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B464040327FF5F960088BA74 /* ReadingListView.swift in Sources */,
+				B46404662800D3F70088BA74 /* EditBookView.swift in Sources */,
+				B46404602800BC460088BA74 /* AddBookView.swift in Sources */,
+				B464045C280099BC0088BA74 /* EditTitleView.swift in Sources */,
 				B464045A27FF77D40088BA74 /* ReadingListViewModel.swift in Sources */,
 				B464040127FF5F960088BA74 /* ReadingListApp.swift in Sources */,
+				B46404622800BD0A0088BA74 /* TextFieldCell.swift in Sources */,
+				B464045E28009A040088BA74 /* BookCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
